@@ -49,20 +49,20 @@
                 <li><a>Pricing</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-xl">Nexcent</a>
+            <a class="text-2xl font-semibold hover:scale-105 transition-transform">Nexcent</a>
           </div>
           <div class="navbar-end hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a>Home</a></li>
-              <li><a>Feature</a></li>
-              <li><a>Community</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Pricing</a></li>
+            <ul class="flex items-center space-x-6">
+              <li class="hover:scale-110 transition-transform"><a>Home</a></li>
+              <li class="hover:scale-110 transition-transform"><a>Feature</a></li>
+              <li class="hover:scale-110 transition-transform"><a>Community</a></li>
+              <li class="hover:scale-110 transition-transform"><a>Blog</a></li>
+              <li class="hover:scale-110 transition-transform"><a>Pricing</a></li>
             </ul>
           </div>
           <div class="">
             <a
-              class="btn btn-success text-white w-full md:w-40 px-4 py-2 text-sm md:text-base"
+              class="btn btn-success text-white w-full md:w-40 px-4 py-2 text-sm md:text-base md:ml-5 hover:scale-105 transition-transform"
             >
               Register Now <i class="fa-solid fa-arrow-right"></i>
             </a>
@@ -113,12 +113,12 @@
         <div
           class="grid grid-cols-3 md:grid-cols-6 place-items-center py-5 md:py-10 gap-5"
         >
-          <img src="/images/logos/Logo (1).png" alt="" />
-          <img src="/images/logos/Logo (2).png" alt="" />
-          <img src="/images/logos/Logo (3).png" alt="" />
-          <img src="/images/logos/Logo (4).png" alt="" />
-          <img src="/images/logos/Logo (5).png" alt="" />
-          <img src="/images/logos/Logo (6).png" alt="" />
+          <img src="/images/logos/Logo (1).png" alt="" class="w-15" />
+          <img src="/images/logos/Logo (2).png" alt="" class="w-15" />
+          <img src="/images/logos/Logo (3).png" alt="" class="w-15" />
+          <img src="/images/logos/Logo (4).png" alt="" class="w-15" />
+          <img src="/images/logos/Logo (5).png" alt="" class="w-15" />
+          <img src="/images/logos/Logo (6).png" alt="" class="w-15" />
         </div>
       </section>
 
@@ -212,7 +212,9 @@
             and the quiet magic that happens when technology serves creativity
             rather than driving it.
           </p>
-          <button class="btn bg-blue-500 text-white border-none">
+          <button
+            class="btn bg-blue-500 text-white border-none hover:scale-105 transition-transform"
+          >
             Learn More
           </button>
         </div>
@@ -451,9 +453,307 @@
           </div>
         </div>
       </section>
+
+      <!-- contact us section -->
+      <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-5">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-semibold mb-4">
+              Get in <span class="text-[#49b155]">Touch</span>
+            </h2>
+            <p class="text-gray-500 max-w-2xl mx-auto">
+              Have questions? Our team typically responds within 24 hours.
+            </p>
+          </div>
+
+          <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Name Field -->
+            <div class="md:col-span-1">
+              <label for="name" class="block text-gray-700 mb-2"
+                >Full Name*</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#49b155] focus:ring-2 focus:ring-green-400 transition-all"
+                placeholder="John Doe"
+              />
+            </div>
+
+            <!-- Email Field -->
+            <div class="md:col-span-1">
+              <label for="email" class="block text-gray-700 mb-2">Email*</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#49b155] focus:ring-2 focus:ring-green-400 transition-all"
+                placeholder="your@email.com"
+              />
+            </div>
+
+            <!-- Subject Field -->
+            <div class="md:col-span-2">
+              <label for="subject" class="block text-gray-700 mb-2"
+                >Subject</label
+              >
+              <select
+                id="subject"
+                name="subject"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#49b155] focus:ring-2 focus:ring-green-100 transition-all"
+              >
+                <option value="" disabled selected>Select an option</option>
+                <option value="membership">Membership Inquiry</option>
+                <option value="technical">Technical Support</option>
+                <option value="partnership">Partnership Opportunity</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Message Field -->
+            <div class="md:col-span-2">
+              <label for="message" class="block text-gray-700 mb-2"
+                >Message*</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#49b155] focus:ring-2 focus:ring-green-100 transition-all"
+                placeholder="How can we help you?"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="md:col-span-2 flex justify-center mt-4">
+              <button
+                type="submit"
+                class="btn btn-success text-white px-8 py-3 rounded-lg hover:scale-105 transition-transform"
+              >
+                Send Message
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 ml-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <!-- Alternative Contact -->
+          <div class="text-center mt-16 text-gray-500">
+            <p>
+              Prefer other methods?
+              <a
+                href="mailto:99pritomjyoti@gmail.com"
+                class="text-[#49b155] hover:underline"
+                >99pritomjyoti@gmail.com</a
+              >
+              or <span class="text-[#49b155]">+880 1680326916</span>
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- footer -->
-    <footer></footer>
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-5">
+        <!-- Main Footer Content -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12"
+        >
+          <!-- Column 1: About -->
+          <div>
+            <h3 class="text-xl font-semibold mb-6 text-[#49b155]">About Us</h3>
+            <p class="text-gray-400 mb-4">
+              Helping creative businesses thrive with powerful tools
+              and community support.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-[#49b155] transition-colors"
+              >
+                <i class="fab fa-facebook-f text-lg"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-[#49b155] transition-colors"
+              >
+                <i class="fab fa-instagram text-lg"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-[#49b155] transition-colors"
+              >
+                <i class="fab fa-linkedin-in text-lg"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-[#49b155] transition-colors"
+              >
+                <i class="fab fa-twitter text-lg"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div>
+            <h3 class="text-xl font-semibold mb-6 text-[#49b155]">
+              Quick Links
+            </h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Services -->
+          <div>
+            <h3 class="text-xl font-semibold mb-6 text-[#49b155]">Services</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Membership Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Event Booking</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Payment Solutions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Community Building</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >API Integrations</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact Info -->
+          <div>
+            <h3 class="text-xl font-semibold mb-6 text-[#49b155]">
+              Contact Us
+            </h3>
+            <address class="not-italic text-gray-400 space-y-3">
+              <div class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3 text-[#49b155]"></i>
+                <p>
+                  Sylhet 3100, Bangladesh
+                </p>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-phone-alt mr-3 text-[#49b155]"></i>
+                <a
+                  href="tel:+15551234567"
+                  class="hover:text-white transition-colors"
+                  >+88 01680326916</a
+                >
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-envelope mr-3 text-[#49b155]"></i>
+                <a
+                  href="mailto:99pritomjyoti@gmail.com"
+                  class="hover:text-white transition-colors"
+                  >99pritomjyoti@gmail.com</a
+                >
+              </div>
+            </address>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-800 my-8"></div>
+
+        <!-- Bottom Footer -->
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-500 text-sm mb-4 md:mb-0">
+            &copy; 2025 Nexcent. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-gray-500 hover:text-white text-sm transition-colors"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 hover:text-white text-sm transition-colors"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 hover:text-white text-sm transition-colors"
+              >Cookies</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
